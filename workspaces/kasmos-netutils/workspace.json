@@ -1,0 +1,18 @@
+{
+  "friendly_name": "KasmOS Desktop (NetUtils)",
+  "description": "KasmOS Desktop preloaded with networking utilities (ping, mtr, traceroute, dig, nslookup, netcat, iproute2).",
+  "docker_registry": "ghcr.io",
+  "image_src": "myip4tfo/kasmos-desktop-netutils:latest",
+  "uncompressed_size_mb": 3500,
+  "cores": 2,
+  "memory": 2700,
+  "gpu_count": 0,
+  "cpu_allocation_method": "Request",
+  "categories": [
+    "Desktop",
+    "Networking"
+  ],
+  "compatibility": [
+    "1.19.x"
+  ]
+}
