@@ -1,9 +1,10 @@
 #!/bin/sh
 set -e
 
-# Kasm Workspaces discovers a compatible registry by probing a version-numbered
-# subfolder (e.g. /1.1/list.json) relative to the root URL you add in Admin,
-# so the schema version here must match site/next.config.js's basePath.
+# Kasm Workspaces discovers a compatible registry by first fetching
+# versions.txt at the root URL you add in Admin, then fetching list.json
+# from whichever version-numbered subfolder it picks, so the version here
+# must match site/next.config.js's basePath.
 VERSION=1.1
 
 node processing
@@ -14,6 +15,7 @@ rm -rf process
 
 mkdir base
 mv public base/$VERSION
+echo "$VERSION" > base/versions.txt
 cat > base/index.html << EOF
 <meta http-equiv="refresh" content="0; url=./$VERSION/">
 EOF
