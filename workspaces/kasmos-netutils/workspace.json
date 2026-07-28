@@ -1,7 +1,7 @@
 {
   "friendly_name": "KasmOS Desktop (NetUtils)",
   "description": "KasmOS Desktop preloaded with networking utilities (ping, mtr, traceroute, dig, nslookup, netcat, iproute2).",
-  "docker_registry": "https://ghcr.io",
+  "docker_registry": "https://ghcr.io/",
   "image_src": "kasmos-desktop-netutils.png",
   "architecture": [
     "amd64"
