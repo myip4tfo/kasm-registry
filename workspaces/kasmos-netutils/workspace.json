@@ -17,7 +17,7 @@
   "compatibility": [
     {
       "version": "1.19.x",
-      "image": "myip4tfo/kasmos-desktop-netutils:latest",
+      "image": "ghcr.io/myip4tfo/kasmos-desktop-netutils:latest",
       "uncompressed_size_mb": 3500,
       "available_tags": [
         "latest"
